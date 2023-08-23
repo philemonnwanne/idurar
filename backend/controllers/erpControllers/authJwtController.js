@@ -119,7 +119,7 @@ exports.isValidAdminToken = async (req, res, next) => {
       return res.status(401).json({
         success: false,
         result: null,
-        message: 'Admin is already logout try to login, authorization denied.',
+        message: 'Admin is already logged out try to login, authorization denied.',
         jwtExpired: true,
       });
     else {
